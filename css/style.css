@@ -123,7 +123,7 @@
     margin-right: 25px;
     padding: 35px 0;
     letter-spacing: 1px;
-    color: var(--bs-2light);
+    color: var(--bs-dark);
     font-size: 17px;
     font-weight: 500;
     outline: none;
@@ -132,12 +132,12 @@
 
 .sticky-top .navbar-light .navbar-nav .nav-link {
     padding: 20px 0;
-    color: var(--bs2-2light);
+    color: rgba(255, 255, 255, 0.404);
 }
 
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link.active {
-    color: var(--bs-primary);
+    color: var(--bs-dark);
 }
 
 .navbar-light .navbar-brand img {
