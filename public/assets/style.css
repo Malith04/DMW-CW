@@ -1,0 +1,53 @@
+.sidebar {
+    min-height: 100vh;
+    background-color: #343a40;
+}
+.sidebar .nav-link {
+    color: rgba(255, 255, 255, 0.75);
+}
+.sidebar .nav-link:hover {
+    color: white;
+}
+.sidebar .nav-link.active {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+.sidebar .nav-link i {
+    font-size: 1.8rem;
+}
+
+.sidebar .nav-item {
+    margin: 10px;
+}
+
+.main-content {
+    padding: 20px;
+}
+.card {
+    margin-bottom: 20px;
+    border: none;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.card-body-2 .form-label{
+    font-size:1.2rem;
+}
+.card-body-2 .btn-primary{
+    font-size:1.5rem;
+}
+.card-body .btn-primary{
+    font-size:1.2rem;
+    background-color: tomato;
+}
+.sidebar .flex-column{
+    font-family: 'Segoe UI';
+}
+
+.table-actions {
+    white-space: nowrap;
+}
+.user-details {
+    max-width: 600px;
+}
