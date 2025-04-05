@@ -480,6 +480,7 @@
     border: 1px solid var(--bs-secondary);
     border-radius: 10px;
     transition: 0.5s;
+    display: block;
 }
 
 .categories .categories-item:hover {
