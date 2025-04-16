@@ -1,7 +1,9 @@
 @extends('layout.master')
 @section('custom_styles')
-{{-- Any additional styles/content that needs to be available in head section --}}
+
+{{--Any additional styles/content that needs to be available in head section--}}
 @endsection
+
 @section('content')
 <!-- Top Bar -->
 <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
@@ -26,8 +28,8 @@
     <div class="col-md-6">
         <div class="card">
             <div class="card-body">
-                <h5 class="card-title">Total Employees</h5>
-                <h2 class="card-text">15</h2>
+                <h5 class="card-title">Total Users</h5>
+                <h2 class="card-text">124</h2>
                 <a href="index.html" class="btn btn-primary">View All</a>
             </div>
         </div>

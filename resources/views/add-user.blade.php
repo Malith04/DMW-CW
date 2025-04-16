@@ -1,20 +1,20 @@
 @extends('layout.master')
-@section('custom_scripts')
+@section('custom_styles')
 @endsection
 @section('content')
-<!-- Top Bar -->
-<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-    <h1 class="h2">Add New Employee</h1>
+ <!-- Top Bar -->
+ <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+    <h1 class="h2">Add New User</h1>
     <div class="btn-toolbar mb-2 mb-md-0">
-        <a href="{{ url('/users') }}" class="btn btn-outline-secondary">
-            <i class="bi bi-arrow-left me-1"></i>Back to Employees
+        <a href="{{url ('/users') }}" class="btn btn-outline-secondary">
+            <i class="bi bi-arrow-left me-1"></i>Back to Users
         </a>
     </div>
 </div>
 
 <!-- Add User Form -->
 <div class="card">
-    <div class="card-body-2">
+    <div class="card-body">
         <form action="{{ url('/users/add') }}" method="POST">
             @csrf
             <div class="mb-3">
@@ -31,7 +31,7 @@
             </div>
             <div class="mb-3">
                 <label for="password" class="form-label">Password</label>
-                <input type="password" name="password" class="form-control" id="password" required>
+                <input type="password" name ="password" class="form-control" id="password" required>
             </div>
             <div class="mb-3">
                 <label for="confirmPassword" class="form-label">Confirm Password</label>

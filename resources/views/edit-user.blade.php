@@ -1,5 +1,5 @@
 @extends('layout.master')
-@section('custom_scripts')
+@section('custom_styles')
 @endsection
 @section('content')
 <!-- Top Bar -->
@@ -15,19 +15,20 @@
 <!-- Edit User Form -->
 <div class="card">
     <div class="card-body">
-        <form action="{{ url('/users/update/'.$user->id) }}" method="POST">
+        <form action="{{url ('/users/update/'.$user->id) }}" method="POST">
             @csrf
             <div class="mb-3">
                 <label for="username" class="form-label">Username</label>
-                <input type="text" class="form-control" id="username" name="username" value="{{ $user->username }}" required>
+                <input type="text" class="form-control" id="username" name="username" value="{{$user->username}}"
+                    required>
             </div>
             <div class="mb-3">
                 <label for="email" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="email" name="email" value="{{ $user->email }}" required>
+                <input type="email" class="form-control" id="email" name="email" value="{{$user->email}}" required>
             </div>
             <div class="mb-3">
                 <label for="age" class="form-label">Age</label>
-                <input type="number" class="form-control" id="age" name="age" value="{{ $user->age }}" min="1" max="120">
+                <input type="number" class="form-control" id="age" name="age" value="{{$user->age}}" min="1" max="120">
             </div>
             <div class="mb-3">
                 <label for="password" class="form-label">New Password (leave blank to keep current)</label>
@@ -42,5 +43,6 @@
     </div>
 </div>
 @endsection
+
 @section('custom_scripts')
 @endsection

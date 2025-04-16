@@ -4,9 +4,9 @@
 @section('content')
 <!-- Top Bar -->
 <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-    <h1 class="h2">Employee Management</h1>
+    <h1 class="h2">User Management</h1>
     <div class="btn-toolbar mb-2 mb-md-0">
-        <a href="{{ url('/users/new') }}" class="btn btn-primary">
+        <a href="{{url ('/users/new') }}" class="btn btn-primary">
             <i class="bi bi-plus-circle me-1"></i>Add User
         </a>
     </div>
@@ -25,12 +25,12 @@
             </tr>
         </thead>
         <tbody>
-            @foreach ($users as $user)
+            @foreach($users as $user)
             <tr>
                 <td>{{ $user->id }}</td>
-                <td>{{ $user->username }}</td>
-                <td>{{ $user->email }}</td>
-                <td>{{ $user->age }}</td>
+                <td>{{$user->username}}</td>
+                <td>{{$user->email}}</td>
+                <td>{{$user->age}}</td>
                 <td class="table-actions">
                     <a href="{{ url('/users/view/'.$user->id) }}" class="btn btn-sm btn-info">
                         <i class="bi bi-eye"></i>
@@ -38,9 +38,9 @@
                     <a href="{{ url('/users/edit/'.$user->id) }}" class="btn btn-sm btn-warning">
                         <i class="bi bi-pencil"></i>
                     </a>
-                    <a href="{{ url('/users/delete/'.$user->id) }}" class="btn btn-sm btn-danger">
+                    <a href="{{ url('/users/delete/'.$user->id) }}" <button class="btn btn-sm btn-danger">
                         <i class="bi bi-trash"></i>
-                    </a>
+                        </button>
                 </td>
             </tr>
             @endforeach
@@ -63,5 +63,6 @@
     </ul>
 </nav>
 @endsection
+
 @section('custom_scripts')
 @endsection
