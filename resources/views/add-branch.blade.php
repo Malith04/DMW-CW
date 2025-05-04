@@ -14,7 +14,7 @@
 <!--Add Company form-->
     <div class="card">
         <div class="card-body">
-            <form action="{{ url('/vehicles/add') }}" method="POST">
+            <form action="{{ url('/branch/add') }}" method="POST">
                 @csrf
                 <div class="mb-3">
                     <label for="name" class="form-label">Vehicle Name</label>

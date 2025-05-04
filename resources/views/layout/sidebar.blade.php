@@ -1,5 +1,5 @@
- <!-- Sidebar -->
- <div class="col-md-3 col-lg-2 d-md-block sidebar collapse bg-dark">
+<!-- Sidebar -->
+<div class="col-md-3 col-lg-2 d-md-block sidebar collapse bg-dark">
     <div class="position-sticky pt-3">
         <ul class="nav flex-column">
             <li class="nav-item">
@@ -18,7 +18,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{ url('/vehicles') }}">
+                <a class="nav-link" href="{{ url('/branches') }}">
                     <i class="bi bi-buildings"></i> Branches
                 </a>
             </li>

@@ -25,3 +25,12 @@ Route::get('/vehicles/view/{id}',[VehicleController::class,'view']);
 Route::post('/vehicles/add',[VehicleController::class,'store']);
 Route::post('/vehicles/update/{id}', [VehicleController::class, 'update'])->name('vehicles.update');
 Route::get('/vehicles/delete/{id}',[VehicleController::class,'delete']);
+
+Route::get('/branches',[BranchController::class,'index']);
+Route::get('/branches/new',[BranchController::class,'create']);
+Route::get('/branches/edit/{id}',[BranchController::class,'edit']);
+Route::get('/branches/view/{id}',[BranchController::class,'view']);
+
+Route::post('/branches/add',[BranchController::class,'store']);
+Route::post('/branches/update/{id}', [BranchController::class, 'update'])->name('branches.update');
+Route::get('/branches/delete/{id}',[BranchController::class,'delete']);
