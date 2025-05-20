@@ -71,7 +71,7 @@
 }
 
 .btn.btn-primary:hover {
-    background: #1f2e4e;
+    background: #1d58d8;
     border: 1px solid #1f2e4e;
 }
 
@@ -111,7 +111,7 @@
 
 /*** Navbar Start ***/
 .nav-bar {
-    background: black;
+    background: rgb(44, 42, 42);
 }
 
 .sticky-top {
@@ -218,7 +218,7 @@
     height: 100%;
     left: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, .6);
+    background: rgba(0, 0, 0, 0.6);
     display: flex;
     align-items: center;
 }
@@ -313,6 +313,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    height:auto;
     border-radius: 10px;
     background: var(--bs-light);
     transition: 0.5s;
@@ -477,7 +478,7 @@
 /*** Cars Categories Start ***/
 .categories .categories-item {
     position: relative;
-    border: 1px solid var(--bs-secondary);
+    border: 2px solid var(--bs-secondary);
     border-radius: 10px;
     transition: 0.5s;
     display: block;
@@ -950,7 +951,7 @@
 /*** copyright Start ***/
 .copyright {
     border-top: 1px solid rgba(255, 255, 255, 0.08);
-    background: var(--bs-dark);
+    background: black;
 }
 /*** copyright end ***/
 
