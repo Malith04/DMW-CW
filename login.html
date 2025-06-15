@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DriveEase | Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="icon" href="img/icon 2.png" />
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-hero">
+            <div class="logo">
+                <i class="fas fa-car"></i>
+                <span>DriveEase</span>
+            </div>
+            <h1>Your Journey Starts Here</h1>
+            <p>Rent the perfect car for your next adventure.</p>
+            <div class="car-image">
+                <img src="img/prado-V8.jpg" alt="Luxury Car">
+            </div>
+        </div>
+
+        <!-- Right Side (Login Form) -->
+        <div class="login-form-container">
+            <div class="form-header">
+                <h1>Welcome Back!</h1>
+                <p>Sign in to book your next ride.</p>
+            </div>
+
+            <form class="login-form">
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <div class="input-field">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" id="email" placeholder="Enter your email" required>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="password" placeholder="Enter your password" required>
+                        <i class="fas fa-eye toggle-password"></i>
+                    </div>
+                    <a href="f_password.html" class="forgot-password">Forgot password?</a>
+                </div>
+
+                <button type="submit" class="login-btn">
+                    <i class="fas fa-sign-in-alt"></i> Sign In
+                </button>
+                <div class="signup-link">
+                    Don't have an account? <a href="register.html">Sign up</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="auth.js"></script>
+</body>
+</html>
