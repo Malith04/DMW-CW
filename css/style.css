@@ -93,7 +93,7 @@
     background: var(--bs-primary);
     border: 1px solid var(--bs-primary);
 }
-
+ 
 /*** Icon Animation Start ***/
 @keyframes icon-animat {
     0%  {border-radius: 67% 33% 29% 71% / 39% 46% 54% 61%;}

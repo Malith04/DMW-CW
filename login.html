@@ -10,6 +10,7 @@
     <script src="https://accounts.google.com/gsi/client" async defer></script>
 </head>
 <body>
+    
     <div class="login-container">
         <div class="login-hero">
             <div class="logo">
@@ -31,6 +32,7 @@
             </div>
 
             <form class="login-form">
+                <div id="signInMessage" class="messageDiv" style="display:none;"></div>
                 <div class="input-group">
                     <label for="email">Email</label>
                     <div class="input-field">
@@ -49,7 +51,7 @@
                     <a href="f_password.html" class="forgot-password">Forgot password?</a>
                 </div>
 
-                <button type="submit" class="login-btn">
+                <button type="submit" class="login-btn" id="submitSignIn">
                     <i class="fas fa-sign-in-alt"></i> Sign In
                 </button>
                 <div class="signup-link">
@@ -59,6 +61,6 @@
         </div>
     </div>
 
-    <script src="auth.js"></script>
+    <script type="module" src="login.js"></script>
 </body>
 </html>

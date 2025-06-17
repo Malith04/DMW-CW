@@ -1,95 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>DriveEase | Register</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="css/style1.css" />
-    <link rel="icon" href="img/icon 2.png" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DriveEase | Register</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style1.css" />
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link rel="icon" href="img/icon 2.png" />
 </head>
 <body>
-    <div class="login-container">
-        <div class="login-hero">
-            <div class="logo">
-                <i class="fas fa-car"></i>
-                <span>DriveEase</span>
-            </div>
-            <h1>Start Your Journey</h1>
-            <p>Create your account to explore the road with comfort.</p>
-            <div class="car-image">
-                <img src="img/carousel-1.jpg" alt="Luxury Car">
-            </div>
-        </div>
-
-        <div class="login-form-container">
-            <div class="form-header">
-                <h1>Create Account</h1>
-                <p>Register to start booking your favorite rides.</p>
-            </div>
-
-            <form action="register.php" method="POST">
-                <div class="input-group">
-                    <label for="name">Full Name</label>
-                    <div class="input-field">
-                        <i class="fas fa-user"></i>
-                        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
-                    </div>
-                </div>
-
-                <div class="input-group">
-                    <label for="email">Email</label>
-                    <div class="input-field">
-                        <i class="fas fa-envelope"></i>
-                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
-                    </div>
-                </div>
-
-                <div class="input-group">
-                    <label for="phone">Phone Number</label>
-                    <div class="input-field">
-                        <i class="fas fa-phone"></i>
-                        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
-                    </div>
-                </div>
-
-                <div class="input-group">
-                    <label for="license">Driver's License Number</label>
-                    <div class="input-field">
-                        <i class="fas fa-id-card"></i>
-                        <input type="text" id="license" name="license" placeholder="Enter your license number" required>
-                    </div>
-                </div>
-
-                <div class="input-group">
-                    <label for="password">Password</label>
-                    <div class="input-field">
-                        <i class="fas fa-lock"></i>
-                        <input type="password" id="password" name="password" placeholder="Create a password" required>
-                        <i class="fas fa-eye toggle-password"></i>
-                    </div>
-                </div>
-
-                <div class="input-group">
-                    <label for="confirmPassword">Confirm Password</label>
-                    <div class="input-field">
-                        <i class="fas fa-lock"></i>
-                        <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password" required>
-                        <i class="fas fa-eye toggle-password"></i>
-                    </div>
-                </div>
-
-                <button type="submit" class="login-btn">
-                    <i class="fas fa-user-plus"></i> Register
-                </button>
-
-                <div class="signup-link">
-                    Already have an account? <a href="login.html">Sign in</a>
-                </div>
-            </form>
-        </div>
+  <div class="login-container">
+    <div class="login-hero">
+      <div class="logo">
+        <i class="fas fa-car"></i>
+        <span>DriveEase</span>
+      </div>
+      <h1>Start Your Journey</h1>
+      <p>Create your account to explore the road with comfort.</p>
+      <div class="car-image">
+        <img src="img/carousel-1.jpg" alt="Luxury Car">
+      </div>
     </div>
 
-    <script src="auth.js"></script>
+    <div class="login-form-container">
+      <div class="form-header">
+        <h1>Create Account</h1>
+        <p>Register to start booking your favorite rides.</p>
+      </div>
+
+      <form id="registrationForm">
+        <div id="signUpMessage" class="messageDiv" style="display:none;"></div>
+        <div class="input-group">
+          <label for="fullName">Full Name</label>
+          <div class="input-field">
+            <i class="fas fa-user"></i>
+            <input type="text" id="fullName" placeholder="Enter your full name" required />
+          </div>
+        </div>
+
+        <div class="input-group">
+          <label for="email">Email</label>
+          <div class="input-field">
+            <i class="fas fa-envelope"></i>
+            <input type="email" id="email" placeholder="Enter your email" required />
+          </div>
+        </div>
+
+        <div class="input-group">
+          <label for="phone">Phone Number</label>
+          <div class="input-field">
+            <i class="fas fa-phone"></i>
+            <input type="tel" id="phone" placeholder="Enter your phone number" required />
+          </div>
+        </div>
+
+        <div class="input-group">
+          <label for="license">Driver's License Number</label>
+          <div class="input-field">
+            <i class="fas fa-id-card"></i>
+            <input type="text" id="license" placeholder="Enter your license number" required />
+          </div>
+        </div>
+
+        <div class="input-group">
+          <label for="password">Password</label>
+          <div class="input-field">
+            <i class="fas fa-lock"></i>
+            <input type="password" id="password" placeholder="Create a password" required />
+          </div>
+        </div>
+
+        <div class="input-group">
+          <label for="confirmPassword">Confirm Password</label>
+          <div class="input-field">
+            <i class="fas fa-lock"></i>
+            <input type="password" id="confirmPassword" placeholder="Confirm your password" required />
+          </div>
+        </div>
+
+        <button type="submit" class="btn" id="submitSignUp">
+            <i class="fas fa-user-plus"></i> Register
+        </button>
+
+        <div class="signup-link">
+          Already have an account? <a href="login.html">Sign in</a>
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+  <script type="module" src="register.js"></script>
 </body>
 </html>

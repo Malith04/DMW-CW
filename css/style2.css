@@ -8,6 +8,18 @@
     --border: #e5e7eb;     
     --bg: #f9fafb;        
 }
+#spinner {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s ease-out, visibility 0s linear .5s;
+    z-index: 99999;
+}
+
+#spinner.show {
+    transition: opacity .5s ease-out, visibility 0s linear 0s;
+    visibility: visible;
+    opacity: 1;
+}
 
 * {
     margin: 0;
@@ -243,4 +255,14 @@ body {
     .login-form-container {
         padding: 2rem;
     }
+}
+.messageDiv{
+    background-color:hsl(0, 100%, 50%);
+    color:white;
+    padding:10px 20px;
+    margin:10px;
+    border-radius: 5px;
+    font-size:1rem;
+    opacity:0;
+    animation:fadeOut 7s forwards;
 }

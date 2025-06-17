@@ -115,179 +115,77 @@
                             <div class="container py-4">
                                 <div class="row g-5">
                                     <div class="col-lg-6 fadeInLeft animated" data-animation="fadeInLeft" data-delay="1s" style="animation-delay: 1s;">
-                                        <div class="bg-secondary rounded p-5">
+                                        <div id="reservationSection" class="bg-secondary rounded p-5" style="filter: blur(4px); pointer-events: none;">
                                             <h4 class="text-white mb-4">CONTINUE CAR RESERVATION</h4>
-                                            <form>
-                                                <div class="row g-3">
-                                                    <div class="col-12">
-                                                        <select class="form-select" aria-label="Default select example">
-                                                            <option selected>Select Your Car type</option>
-                                                            <option value="1">Suzuki Wagon R</option>
-                                                            <option value="2">Suzuki Alto 800</option>
-                                                            <option value="3">Toyota Prius</option>
-                                                            <option value="4">Toyota Hiace</option>
-                                                            <option value="4">Suzuki Every</option>
-                                                            <option value="4">Honda Grace</option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="col-12">
-                                                        <div class="input-group">
-                                                            <div class="d-flex align-items-center bg-light text-body rounded-start p-2">
-                                                                <span class="fas fa-map-marker-alt"></span> <span class="ms-1">Pick Up</span>
-                                                            </div>
-                                                            <input class="form-control" type="text" placeholder="Enter a City or Airport" aria-label="Enter a City or Airport">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-12">
-                                                        <a href="#" class="text-start text-white d-block mb-2">Need a different drop-off location?</a>
-                                                        <div class="input-group">
-                                                            <div class="d-flex align-items-center bg-light text-body rounded-start p-2">
-                                                                <span class="fas fa-map-marker-alt"></span><span class="ms-1">Drop off</span>
-                                                            </div>
-                                                            <input class="form-control" type="text" placeholder="Enter a City or Airport" aria-label="Enter a City or Airport">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-12">
-                                                        <div class="input-group">
-                                                            <div class="d-flex align-items-center bg-light text-body rounded-start p-2">
-                                                                <span class="fas fa-calendar-alt"></span><span class="ms-1">Pick Up</span>
-                                                            </div>
-                                                            <input class="form-control" type="date">
-                                                            <select class="form-select ms-3" aria-label="Default select example">
-                                                                <option selected>12:00AM</option>
-                                                                <option value="1">1:00AM</option>
-                                                                <option value="2">2:00AM</option>
-                                                                <option value="3">3:00AM</option>
-                                                                <option value="4">4:00AM</option>
-                                                                <option value="5">5:00AM</option>
-                                                                <option value="6">6:00AM</option>
-                                                                <option value="7">8:00AM</option>
-                                                                <option value="7">9:00AM</option>
-                                                                <option value="7">9:00AM</option>
-                                                                <option value="7">10:00AM</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-12">
-                                                        <div class="input-group">
-                                                            <div class="d-flex align-items-center bg-light text-body rounded-start p-2">
-                                                                <span class="fas fa-calendar-alt"></span><span class="ms-1">Drop off</span>
-                                                            </div>
-                                                            <input class="form-control" type="date">
-                                                            <select class="form-select ms-3" type="times" aria-label="Default select example">
-                                                                <option selected>12:00AM</option>
-                                                                <option value="1">1:00AM</option>
-                                                                <option value="2">2:00AM</option>
-                                                                <option value="3">3:00AM</option>
-                                                                <option value="4">4:00AM</option>
-                                                                <option value="5">5:00AM</option>
-                                                                <option value="6">6:00AM</option>
-                                                                <option value="7">8:00AM</option>
-                                                                <option value="7">9:00AM</option>
-                                                                <option value="7">9:00AM</option>
-                                                                <option value="7">10:00AM</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-12">
-                                                        <button class="btn btn-light w-100 py-2">Book Now</button>
-                                                    </div>
+                                            <form id="reservationForm">
+                                                <div class="col-12">
+                                                    <select id="carType" class="form-select" required>
+                                                    <option selected disabled>Select Your Car type</option>
+                                                    <option value="Wagon R">Suzuki Wagon R</option>
+                                                    <option value="Alto 800">Suzuki Alto 800</option>
+                                                    <option value="Prius">Toyota Prius</option>
+                                                    <option value="Hiace">Toyota Hiace</option>
+                                                    <option value="Every">Suzuki Every</option>
+                                                    <option value="Grace">Honda Grace</option>
+                                                    </select>
                                                 </div>
+
+                                                <div class="col-12">
+                                                    <input id="pickup" class="form-control" type="text" placeholder="Pick up location" required />
+                                                </div>
+
+                                                <div class="col-12">
+                                                    <input id="dropoff" class="form-control" type="text" placeholder="Drop off location" required />
+                                                </div>
+
+                                                <div class="col-12">
+                                                    <input id="pickupDate" class="form-control" type="date" required />
+                                                    <select id="pickupTime" class="form-select ms-3" required>
+                                                    <option value="12:00AM">12:00AM</option>
+                                                    <option value="1:00AM">1:00AM</option>
+                                                    <option value="2:00AM">2:00AM</option>
+                                                    <option value="3:00AM">3:00AM</option>
+                                                    <option value="4:00AM">4:00AM</option>
+                                                    <option value="5:00AM">5:00AM</option>
+                                                    <option value="6:00AM">6:00AM</option>
+                                                    <option value="7:00AM">7:00AM</option>
+                                                    <option value="8:00AM">8:00AM</option>
+                                                    <option value="9:00AM">9:00AM</option>
+                                                    <option value="10:00AM">10:00AM</option>
+                                                    </select>
+                                                </div>
+
+                                                <div class="col-12">
+                                                    <input id="dropoffDate" class="form-control" type="date" required />
+                                                    <select id="dropoffTime" class="form-select ms-3" required>
+                                                    <option value="12:00AM">12:00AM</option>
+                                                    <option value="1:00AM">1:00AM</option>
+                                                    <option value="2:00AM">2:00AM</option>
+                                                    <option value="3:00AM">3:00AM</option>
+                                                    <option value="4:00AM">4:00AM</option>
+                                                    <option value="5:00AM">5:00AM</option>
+                                                    <option value="6:00AM">6:00AM</option>
+                                                    <option value="7:00AM">7:00AM</option>
+                                                    <option value="8:00AM">8:00AM</option>
+                                                    <option value="9:00AM">9:00AM</option>
+                                                    <option value="10:00AM">10:00AM</option>
+                                                    </select>
+                                                </div>
+
+                                                <div class="col-12">
+                                                    <button class="btn btn-light w-100 py-2" type="submit">Book Now</button>
+                                                </div>
+                                                <a href="#vehicleCategories" class="btn btn-primary rounded-pill d-flex justify-content-center py-3">For more details look down for below</a>
                                             </form>
+
+                                        </div>
+                                        <div id="loginOverlay" style="color: white; background: rgba(0,0,0,0.6); padding: 10px; border-radius: 10px; margin-top: 10px;">
+                                            🔒 Please <a href="login.html" style="color: #ffc107;">login</a> to continue your reservation.
                                         </div>
                                     </div>
                                     <div class="col-lg-6 d-none d-lg-flex fadeInRight animated" data-animation="fadeInRight" data-delay="1s" style="animation-delay: 1s;">
                                         <div class="text-start">
                                             <h1 class="display-5 text-white">Get 15% off your rental plan your trip now</h1>
-                                            <p>“Drive with Ease, Rent with Confidence - Your Journey, Our Wheels”</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="img/carousel-1.jpg" class="img-fluid w-100" alt="First slide"/>
-                        <div class="carousel-caption">
-                            <div class="container py-4">
-                                <div class="row g-5">
-                                    <div class="col-lg-6 fadeInLeft animated" data-animation="fadeInLeft" data-delay="1s" style="animation-delay: 1s;">
-                                        <div class="bg-secondary rounded p-5">
-                                            <h4 class="text-white mb-4">CONTINUE CAR RESERVATION</h4>
-                                            <form>
-                                                <div class="row g-3">
-                                                    <div class="col-12">
-                                                        <select class="form-select" aria-label="Default select example">
-                                                            <option selected>Select Your Car type</option>
-                                                            <option value="1">VW Golf VII</option>
-                                                            <option value="2">Audi A1 S-Line</option>
-                                                            <option value="3">Toyota Camry</option>
-                                                            <option value="4">BMW 320 ModernLine</option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="col-12">
-                                                        <div class="input-group">
-                                                            <div class="d-flex align-items-center bg-light text-body rounded-start p-2">
-                                                                <span class="fas fa-map-marker-alt"></span><span class="ms-1">Pick Up</span>
-                                                            </div>
-                                                            <input class="form-control" type="text" placeholder="Enter a City or Airport" aria-label="Enter a City or Airport">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-12">
-                                                        <a href="#" class="text-start text-white d-block mb-2">Need a different drop location?</a>
-                                                        <div class="input-group">
-                                                            <div class="d-flex align-items-center bg-light text-body rounded-start p-2">
-                                                                <span class="fas fa-map-marker-alt"></span><span class="ms-1">Drop</span>
-                                                            </div>
-                                                            <input class="form-control" type="text" placeholder="Enter a City or Airport" aria-label="Enter a City or Airport">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-12">
-                                                        <div class="input-group">
-                                                            <div class="d-flex align-items-center bg-light text-body rounded-start p-2">
-                                                                <span class="fas fa-calendar-alt"></span><span class="ms-1">Pick Up</span>
-                                                            </div>
-                                                            <input class="form-control" type="date">
-                                                            <select class="form-select ms-3" aria-label="Default select example">
-                                                                <option selected>12:00AM</option>
-                                                                <option value="1">1:00AM</option>
-                                                                <option value="2">2:00AM</option>
-                                                                <option value="3">3:00AM</option>
-                                                                <option value="4">4:00AM</option>
-                                                                <option value="5">5:00AM</option>
-                                                                <option value="6">6:00AM</option>
-                                                                <option value="7">7:00AM</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-12">
-                                                        <div class="input-group">
-                                                            <div class="d-flex align-items-center bg-light text-body rounded-start p-2">
-                                                                <span class="fas fa-calendar-alt"></span><span class="ms-1">Drop </span>
-                                                            </div>
-                                                            <input class="form-control" type="date">
-                                                            <select class="form-select ms-3" aria-label="Default select example">
-                                                                <option selected>12:00AM</option>
-                                                                <option value="1">1:00AM</option>
-                                                                <option value="2">2:00AM</option>
-                                                                <option value="3">3:00AM</option>
-                                                                <option value="4">4:00AM</option>
-                                                                <option value="5">5:00AM</option>
-                                                                <option value="6">6:00AM</option>
-                                                                <option value="7">7:00AM</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-12">
-                                                        <button class="btn btn-light w-100 py-2">Book Now</button>
-                                                    </div>
-                                                </div>
-                                            </form>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 d-none d-lg-flex fadeInRight animated" data-animation="fadeInRight" data-delay="1s" style="animation-delay: 1s;">
-                                        <div class="text-start">
-                                            <h1 class="display-5 text-white">Get 15% off your rental! Choose Your Model </h1>
                                             <p>“Drive with Ease, Rent with Confidence - Your Journey, Our Wheels”</p>
                                         </div>
                                     </div>
@@ -577,7 +475,7 @@
 
         <!-- Car categories Start -->
         <div class="container-fluid categories pb-5">
-            <div class="container pb-5">
+            <div id="vehicleCategories" class="container-fluid categories pb-5">
                 <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px;">
                     <h1 class="display-5 text-capitalize mb-3">Vehicle <span class="text-primary">Categories</span></h1>
                     <p class="mb-0">A vehicle rental website falls under the category of transportation services and more specifically,
@@ -627,7 +525,6 @@
                                         <i class="fa fa-road text-dark"></i> <span class="text-body ms-1">17K</span>
                                     </div>
                                 </div>
-                                <a href="#" class="btn btn-primary rounded-pill d-flex justify-content-center py-3">Book Now</a>
                             </div>
                         </div>
                     </div>
@@ -671,7 +568,6 @@
                                         <i class="fa fa-road text-dark"></i> <span class="text-body ms-1">27K</span>
                                     </div>
                                 </div>
-                                <a href="#" class="btn btn-primary rounded-pill d-flex justify-content-center py-3">Book Now</a>
                             </div>
                         </div>
                     </div>
@@ -715,7 +611,6 @@
                                         <i class="fa fa-road text-dark"></i> <span class="text-body ms-1">27K</span>
                                     </div>
                                 </div>
-                                <a href="#" class="btn btn-primary rounded-pill d-flex justify-content-center py-3">Book Now</a>
                             </div>
                         </div>
                     </div>
@@ -759,7 +654,6 @@
                                         <i class="fa fa-road text-dark"></i> <span class="text-body ms-1">27K</span>
                                     </div>
                                 </div>
-                                <a href="#" class="btn btn-primary rounded-pill d-flex justify-content-center py-3">Book Now</a>
                             </div>
                         </div>
                     </div>
@@ -1144,8 +1038,44 @@
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     
 
-    <!-- Template Javascript -->
+   >
     <script src="js/main.js"></script>
+    <script type="module" src="reservation.js"></script>
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyACM92FuOGDM8dniwRSikrMKBWOQC5K1EA",
+            authDomain: "driveease-4edf1.firebaseapp.com",
+            projectId: "driveease-4edf1",
+            storageBucket: "driveease-4edf1.appspot.com",
+            messagingSenderId: "133410369604",
+            appId: "1:133410369604:web:1942af33e3129cf9424c11"
+        };
+
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const auth = firebase.auth();
+
+        auth.onAuthStateChanged((user) => {
+            const section = document.getElementById("reservationSection");
+            const overlay = document.getElementById("loginOverlay");
+
+            if (user) {
+            section.style.filter = "none";
+            section.style.pointerEvents = "auto";
+            overlay.style.display = "none";
+            } else {
+            section.style.filter = "blur(4px)";
+            section.style.pointerEvents = "none";
+            overlay.style.display = "block";
+            }
+        });
+        </script>
+
+        <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+        <script>
+            emailjs.init("_bGfrCN4NGGQAiKHI"); // from EmailJS dashboard
+        </script>
+
     </body>
 
 </html>
