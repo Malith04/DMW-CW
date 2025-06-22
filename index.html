@@ -112,73 +112,81 @@
                     <div class="carousel-item active">
                         <img src="img/prado-V8.jpg" class="img-fluid w-100" alt="First slide"/>
                         <div class="carousel-caption">
-                            <div class="container py-4">
-                                <div class="row g-5">
-                                    <div class="col-lg-6 fadeInLeft animated" data-animation="fadeInLeft" data-delay="1s" style="animation-delay: 1s;">
-                                        <div id="reservationSection" class="bg-secondary rounded p-5" style="filter: blur(4px); pointer-events: none;">
-                                            <h4 class="text-white mb-4">CONTINUE CAR RESERVATION</h4>
-                                            <form id="reservationForm">
-                                                <div class="col-12">
-                                                    <select id="carType" class="form-select" required>
-                                                    <option selected disabled>Select Your Car type</option>
-                                                    <option value="Wagon R">Suzuki Wagon R</option>
-                                                    <option value="Alto 800">Suzuki Alto 800</option>
-                                                    <option value="Prius">Toyota Prius</option>
-                                                    <option value="Hiace">Toyota Hiace</option>
-                                                    <option value="Every">Suzuki Every</option>
-                                                    <option value="Grace">Honda Grace</option>
-                                                    </select>
-                                                </div>
+                            <div class="container h-100 d-flex justify-content-center align-items-center">
+                                <div class="row w-100 justify-content-center">
+                                    <div class="col-lg-6 col-md-10 fadeInLeft animated">
+                                        <div id="reservationSection" class="bg-secondary rounded p-5" style="filter: blur(4px); pointer-events: none; max-width: 500px; margin: 0 auto;">
+  <h4 class="text-white mb-4 text-center">CONTINUE CAR RESERVATION</h4>
+  <form id="reservationForm" class="row g-3">
+    
+    <div class="col-12">
+      <select id="carType" class="form-select" required>
+        <option selected disabled>Select Your Car type</option>
+        <option value="Wagon R">Suzuki Wagon R</option>
+        <option value="Alto 800">Suzuki Alto 800</option>
+        <option value="Prius">Toyota Prius</option>
+        <option value="Hiace">Toyota Hiace</option>
+        <option value="Every">Suzuki Every</option>
+        <option value="Grace">Honda Grace</option>
+      </select>
+    </div>
 
-                                                <div class="col-12">
-                                                    <input id="pickup" class="form-control" type="text" placeholder="Pick up location" required />
-                                                </div>
+    <div class="col-12">
+      <input id="pickup" class="form-control" type="text" placeholder="Pick up location" required />
+    </div>
 
-                                                <div class="col-12">
-                                                    <input id="dropoff" class="form-control" type="text" placeholder="Drop off location" required />
-                                                </div>
+    <div class="col-12">
+      <input id="dropoff" class="form-control" type="text" placeholder="Drop off location" required />
+    </div>
 
-                                                <div class="col-12">
-                                                    <input id="pickupDate" class="form-control" type="date" required />
-                                                    <select id="pickupTime" class="form-select ms-3" required>
-                                                    <option value="12:00AM">12:00AM</option>
-                                                    <option value="1:00AM">1:00AM</option>
-                                                    <option value="2:00AM">2:00AM</option>
-                                                    <option value="3:00AM">3:00AM</option>
-                                                    <option value="4:00AM">4:00AM</option>
-                                                    <option value="5:00AM">5:00AM</option>
-                                                    <option value="6:00AM">6:00AM</option>
-                                                    <option value="7:00AM">7:00AM</option>
-                                                    <option value="8:00AM">8:00AM</option>
-                                                    <option value="9:00AM">9:00AM</option>
-                                                    <option value="10:00AM">10:00AM</option>
-                                                    </select>
-                                                </div>
+    <div class="col-md-6">
+      <input id="pickupDate" class="form-control" type="date" required />
+    </div>
+    <div class="col-md-6">
+      <select id="pickupTime" class="form-select" required>
+        <option value="12:00AM">12:00AM</option>
+        <option value="1:00AM">1:00AM</option>
+        <option value="2:00AM">2:00AM</option>
+        <option value="3:00AM">3:00AM</option>
+        <option value="4:00AM">4:00AM</option>
+        <option value="5:00AM">5:00AM</option>
+        <option value="6:00AM">6:00AM</option>
+        <option value="7:00AM">7:00AM</option>
+        <option value="8:00AM">8:00AM</option>
+        <option value="9:00AM">9:00AM</option>
+        <option value="10:00AM">10:00AM</option>
+      </select>
+    </div>
 
-                                                <div class="col-12">
-                                                    <input id="dropoffDate" class="form-control" type="date" required />
-                                                    <select id="dropoffTime" class="form-select ms-3" required>
-                                                    <option value="12:00AM">12:00AM</option>
-                                                    <option value="1:00AM">1:00AM</option>
-                                                    <option value="2:00AM">2:00AM</option>
-                                                    <option value="3:00AM">3:00AM</option>
-                                                    <option value="4:00AM">4:00AM</option>
-                                                    <option value="5:00AM">5:00AM</option>
-                                                    <option value="6:00AM">6:00AM</option>
-                                                    <option value="7:00AM">7:00AM</option>
-                                                    <option value="8:00AM">8:00AM</option>
-                                                    <option value="9:00AM">9:00AM</option>
-                                                    <option value="10:00AM">10:00AM</option>
-                                                    </select>
-                                                </div>
+    <div class="col-md-6">
+      <input id="dropoffDate" class="form-control" type="date" required />
+    </div>
+    <div class="col-md-6">
+      <select id="dropoffTime" class="form-select" required>
+        <option value="12:00AM">12:00AM</option>
+        <option value="1:00AM">1:00AM</option>
+        <option value="2:00AM">2:00AM</option>
+        <option value="3:00AM">3:00AM</option>
+        <option value="4:00AM">4:00AM</option>
+        <option value="5:00AM">5:00AM</option>
+        <option value="6:00AM">6:00AM</option>
+        <option value="7:00AM">7:00AM</option>
+        <option value="8:00AM">8:00AM</option>
+        <option value="9:00AM">9:00AM</option>
+        <option value="10:00AM">10:00AM</option>
+      </select>
+    </div>
 
-                                                <div class="col-12">
-                                                    <button class="btn btn-light w-100 py-2" type="submit">Book Now</button>
-                                                </div>
-                                                <a href="#vehicleCategories" class="btn btn-primary rounded-pill d-flex justify-content-center py-3">For more details look down for below</a>
-                                            </form>
+    <div class="col-12">
+      <button class="btn btn-light w-100 py-2" type="submit">Book Now</button>
+    </div>
 
-                                        </div>
+    <div class="col-12">
+      <a href="#vehicleCategories" class="btn btn-danger w-100 py-2">For more details look down for below</a>
+    </div>
+  </form>
+</div>
+
                                         <div id="loginOverlay" style="color: white; background: rgba(0,0,0,0.6); padding: 10px; border-radius: 10px; margin-top: 10px;">
                                             🔒 Please <a href="login.html" style="color: #ffc107;">login</a> to continue your reservation.
                                         </div>
