@@ -90,7 +90,16 @@
 
 .btn.btn-light:hover {
     color: var(--bs-white);
-    background: var(--bs-primary);
+    background: blue;
+    border: 1px solid var(--bs-primary);
+}
+
+.btn btn-danger{
+    color: var(--bs-primary);
+}
+.btn btn-danger:hover{
+    color: blue;
+    background: blue;
     border: 1px solid var(--bs-primary);
 }
  

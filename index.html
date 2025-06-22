@@ -105,8 +105,6 @@
         <div class="header-carousel">
             <div id="carouselId" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
                 <ol class="carousel-indicators">
-                    <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true" aria-label="First slide"></li>
-                    <li data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="Second slide"></li>
                 </ol>
                 <div class="carousel-inner" role="listbox">
                     <div class="carousel-item active">
@@ -116,81 +114,83 @@
                                 <div class="row w-100 justify-content-center">
                                     <div class="col-lg-6 col-md-10 fadeInLeft animated">
                                         <div id="reservationSection" class="bg-secondary rounded p-5" style="filter: blur(4px); pointer-events: none; max-width: 500px; margin: 0 auto;">
-  <h4 class="text-white mb-4 text-center">CONTINUE CAR RESERVATION</h4>
-  <form id="reservationForm" class="row g-3">
-    
-    <div class="col-12">
-      <select id="carType" class="form-select" required>
-        <option selected disabled>Select Your Car type</option>
-        <option value="Wagon R">Suzuki Wagon R</option>
-        <option value="Alto 800">Suzuki Alto 800</option>
-        <option value="Prius">Toyota Prius</option>
-        <option value="Hiace">Toyota Hiace</option>
-        <option value="Every">Suzuki Every</option>
-        <option value="Grace">Honda Grace</option>
-      </select>
-    </div>
+                                            <h4 class="text-white mb-4 text-center">CONTINUE CAR RESERVATION</h4>
+                                            <form id="reservationForm" class="row g-3">
+                                                
+                                                <div class="col-12">
+                                                <select id="carType" class="form-select" required>
+                                                    <option selected disabled>Select Your Car type</option>
+                                                    <option value="Wagon R">Suzuki Wagon R</option>
+                                                    <option value="Alto 800">Suzuki Alto 800</option>
+                                                    <option value="Prius">Toyota Prius</option>
+                                                    <option value="Hiace">Toyota Hiace</option>
+                                                    <option value="Every">Suzuki Every</option>
+                                                    <option value="Grace">Honda Grace</option>
+                                                </select>
+                                                </div>
 
-    <div class="col-12">
-      <input id="pickup" class="form-control" type="text" placeholder="Pick up location" required />
-    </div>
+                                                <div class="col-12">
+                                                <input id="pickup" class="form-control" type="text" placeholder="Pick up location" required />
+                                                </div>
+                                                
+                                                 <div class="col-md-6">
+                                                <input id="pickupDate" class="form-control" type="date" required />
+                                                </div>
 
-    <div class="col-12">
-      <input id="dropoff" class="form-control" type="text" placeholder="Drop off location" required />
-    </div>
+                                                <div class="col-md-6">
+                                                <select id="pickupTime" class="form-select" type="times" required>
+                                                    <option value="12:00AM">12:00AM</option>
+                                                    <option value="1:00AM">1:00AM</option>
+                                                    <option value="2:00AM">2:00AM</option>
+                                                    <option value="3:00AM">3:00AM</option>
+                                                    <option value="4:00AM">4:00AM</option>
+                                                    <option value="5:00AM">5:00AM</option>
+                                                    <option value="6:00AM">6:00AM</option>
+                                                    <option value="7:00AM">7:00AM</option>
+                                                    <option value="8:00AM">8:00AM</option>
+                                                    <option value="9:00AM">9:00AM</option>
+                                                    <option value="10:00AM">10:00AM</option>
+                                                </select>
+                                                </div>
 
-    <div class="col-md-6">
-      <input id="pickupDate" class="form-control" type="date" required />
-    </div>
-    <div class="col-md-6">
-      <select id="pickupTime" class="form-select" required>
-        <option value="12:00AM">12:00AM</option>
-        <option value="1:00AM">1:00AM</option>
-        <option value="2:00AM">2:00AM</option>
-        <option value="3:00AM">3:00AM</option>
-        <option value="4:00AM">4:00AM</option>
-        <option value="5:00AM">5:00AM</option>
-        <option value="6:00AM">6:00AM</option>
-        <option value="7:00AM">7:00AM</option>
-        <option value="8:00AM">8:00AM</option>
-        <option value="9:00AM">9:00AM</option>
-        <option value="10:00AM">10:00AM</option>
-      </select>
-    </div>
+                                                <div class="col-12">
+                                                <input id="dropoff" class="form-control" type="text" placeholder="Drop off location" required />
+                                                </div>
 
-    <div class="col-md-6">
-      <input id="dropoffDate" class="form-control" type="date" required />
-    </div>
-    <div class="col-md-6">
-      <select id="dropoffTime" class="form-select" required>
-        <option value="12:00AM">12:00AM</option>
-        <option value="1:00AM">1:00AM</option>
-        <option value="2:00AM">2:00AM</option>
-        <option value="3:00AM">3:00AM</option>
-        <option value="4:00AM">4:00AM</option>
-        <option value="5:00AM">5:00AM</option>
-        <option value="6:00AM">6:00AM</option>
-        <option value="7:00AM">7:00AM</option>
-        <option value="8:00AM">8:00AM</option>
-        <option value="9:00AM">9:00AM</option>
-        <option value="10:00AM">10:00AM</option>
-      </select>
-    </div>
+                                                <div class="col-md-6">
+                                                <input id="dropoffDate" class="form-control" type="date" required />
+                                                </div>
+                                                <div class="col-md-6">
+                                                <select id="dropoffTime" class="form-select" required>
+                                                    <option value="12:00AM">12:00AM</option>
+                                                    <option value="1:00AM">1:00AM</option>
+                                                    <option value="2:00AM">2:00AM</option>
+                                                    <option value="3:00AM">3:00AM</option>
+                                                    <option value="4:00AM">4:00AM</option>
+                                                    <option value="5:00AM">5:00AM</option>
+                                                    <option value="6:00AM">6:00AM</option>
+                                                    <option value="7:00AM">7:00AM</option>
+                                                    <option value="8:00AM">8:00AM</option>
+                                                    <option value="9:00AM">9:00AM</option>
+                                                    <option value="10:00AM">10:00AM</option>
+                                                </select>
+                                                </div>
 
-    <div class="col-12">
-      <button class="btn btn-light w-100 py-2" type="submit">Book Now</button>
-    </div>
+                                                <div class="col-12">
+                                                <button class="btn btn-light w-100 py-2" type="submit">Book Now</button>
+                                                </div>
 
-    <div class="col-12">
-      <a href="#vehicleCategories" class="btn btn-danger w-100 py-2">For more details look down for below</a>
-    </div>
-  </form>
-</div>
+                                                <div class="col-12">
+                                                <a href="#vehicleCategories" class="btn btn-danger w-100 py-2">For more details look down for below</a>
+                                                </div>
+                                            </form>
+                                            </div>
 
                                         <div id="loginOverlay" style="color: white; background: rgba(0,0,0,0.6); padding: 10px; border-radius: 10px; margin-top: 10px;">
                                             🔒 Please <a href="login.html" style="color: #ffc107;">login</a> to continue your reservation.
                                         </div>
                                     </div>
+
                                     <div class="col-lg-6 d-none d-lg-flex fadeInRight animated" data-animation="fadeInRight" data-delay="1s" style="animation-delay: 1s;">
                                         <div class="text-start">
                                             <h1 class="display-5 text-white">Get 15% off your rental plan your trip now</h1>
@@ -317,10 +317,6 @@
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="rounded">
-                                        <p class="mb-2"><i class="fa fa-check-circle text-primary me-1"></i> Morbi tristique senectus</p>
-                                        <p class="mb-2"><i class="fa fa-check-circle text-primary me-1"></i> A scelerisque purus</p>
-                                        <p class="mb-2"><i class="fa fa-check-circle text-primary me-1"></i> Dictumst vestibulum</p>
-                                        <p class="mb-0"><i class="fa fa-check-circle text-primary me-1"></i> dio aenean sed adipiscing</p>
                                     </div>
                                 </div>
                                 <div class="col-lg-5 d-flex align-items-center">
@@ -711,7 +707,7 @@
             <div class="container py-5">
                 <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px;">
                     <h1 class="display-5 text-capitalize mb-3">DriveEase<span class="text-primary"> Blog & News</span></h1>
-                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut amet nemo expedita asperiores commodi accusantium at cum harum, excepturi, quia tempora cupiditate! Adipisci facilis modi quisquam quia distinctio,
+                    <p class="mb-0">
                     </p>
                 </div>
                 <div class="row g-4">
@@ -877,7 +873,7 @@
             <div class="container pb-5">
                 <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px;">
                     <h1 class="display-5 text-capitalize mb-3">Our Clients<span class="text-primary"> Reviews</span></h1>
-                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut amet nemo expedita asperiores commodi accusantium at cum harum, excepturi, quia tempora cupiditate! Adipisci facilis modi quisquam quia distinctio,
+                    <p class="mb-0">
                     </p>
                 </div>
                 <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
